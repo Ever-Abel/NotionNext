@@ -64,7 +64,7 @@ const Hero = props => {
       style={{ zIndex: 1 }}
       className='w-full h-screen relative bg-black'>
       <div className='text-white absolute bottom-0 flex flex-col h-full items-center justify-center w-full '>
-        <div className='font-black text-5xl md:text-7xl shadow-text'style={{ marginTop: '100px' }}>
+        <div className='font-black text-5xl md:text-7xl shadow-text'style={{ marginTop: '200px' }}>
           {siteInfo?.title || siteConfig('TITLE')}
         </div>
         {/* 站点欢迎语 */}
