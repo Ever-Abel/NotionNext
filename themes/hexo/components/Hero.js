@@ -69,14 +69,14 @@ const Hero = props => {
       style={{ zIndex: 1 }}
       className='w-full h-screen relative bg-black'
     >
-      <div className='text-white absolute bottom-0 flex flex-col h-full items-center justify-center w-full '>
+        <div className='text-white absolute bottom-0 flex flex-col h-full items-center justify-center w-full '>
         {/* 站点标题 */}
-        <div className='font-bold text-[clamp(3rem,7vw,10rem)] leading-none whitespace-nowrap shadow-text'>
+        <div className='mt-[4vh] font-bold text-[clamp(3rem,7vw,10rem)] leading-none whitespace-nowrap shadow-text'>
         {siteInfo?.title || siteConfig('TITLE')}
         </div>
 
         {/* 站点欢迎语 */}
-        <div className='mt-[1vw] h-auto items-center text-center font-light shadow-text text-[clamp(1.5rem,2.5vw,4rem)] leading-tight whitespace-nowrap'>
+        <div className='mt-[clamp(1.5rem,2vw,3rem)] h-auto items-center text-center font-light shadow-text text-[clamp(1.25rem,1.75vw,3rem)] leading-tight whitespace-nowrap'>
         <span id='typed' />
         </div>
 
