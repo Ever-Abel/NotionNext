@@ -71,12 +71,13 @@ const Hero = props => {
     >
       <div className='text-white absolute bottom-0 flex flex-col h-full items-center justify-center w-full '>
         {/* 站点标题 */}
-        <div className='font-bold text-7xl md:text-8xl lg:text-9xl leading-none whitespace-nowrap shadow-text'>
-          {siteInfo?.title || siteConfig('TITLE')}
+        <div className='font-bold text-[clamp(3rem,7vw,10rem)] leading-none whitespace-nowrap shadow-text'>
+        {siteInfo?.title || siteConfig('TITLE')}
         </div>
+
         {/* 站点欢迎语 */}
-        <div className='mt-2 h-12 items-center text-center font-light shadow-text text-lg'>
-          <span id='typed' />
+        <div className='mt-[1vw] h-auto items-center text-center font-light shadow-text text-[clamp(1.5rem,2.5vw,4rem)] leading-tight whitespace-nowrap'>
+        <span id='typed' />
         </div>
 
         {/* 首页导航大按钮 */}
