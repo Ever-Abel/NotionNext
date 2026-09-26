@@ -71,7 +71,7 @@ const Hero = props => {
     >
       <div className='text-white absolute bottom-0 flex flex-col h-full items-center justify-center w-full '>
         {/* 站点标题 */}
-        <div className='font-bold text-4xl md:text-5xl shadow-text'>
+        <div className='font-bold text-7xl md:text-8xl lg:text-9xl leading-none whitespace-nowrap shadow-text'>
           {siteInfo?.title || siteConfig('TITLE')}
         </div>
         {/* 站点欢迎语 */}
