@@ -58,51 +58,51 @@ const NavButtonGroup = props => {
         const { title, subtitle } = splitCategoryName(category.name)
 
         return (
-          <SmartLink
-            key={category.name}
-            title={category.name}
-            href={`/category/${category.name}`}
-            passHref
-            className='
-              text-center
-              text-white
-              shadow-text
+<SmartLink
+  key={category.name}
+  title={category.name}
+  href={`/category/${category.name}`}
+  passHref
+  className='
+    text-center
+    text-white
+    shadow-text
 
-              w-[clamp(15rem,22vw,28rem)]
-              h-[clamp(6rem,9vw,11rem)]
+    w-[clamp(10rem,14.7vw,18.7rem)]
+    h-[clamp(4rem,6vw,7.3rem)]
 
-              flex
-              flex-col
-              justify-center
-              items-center
+    flex
+    flex-col
+    justify-center
+    items-center
 
-              px-[clamp(1rem,2vw,2.5rem)]
+    px-[clamp(0.75rem,1.3vw,1.7rem)]
 
-              border-2
-              cursor-pointer
-              rounded-xl
-              glassmorphism
+    border-2
+    cursor-pointer
+    rounded-xl
+    glassmorphism
 
-              hover:bg-white
-              hover:text-black
-              hover:scale-105
+    hover:bg-white
+    hover:text-black
+    hover:scale-105
 
-              duration-200
-              transform
-            '>
+    duration-200
+    transform
+  '>
 
-            {/* 中文标题 */}
-            <span className='font-semibold text-[clamp(1.25rem,2vw,2.75rem)] leading-none whitespace-nowrap'>
-              {title}
-            </span>
+  {/* 中文标题 */}
+  <span className='font-semibold text-[clamp(1rem,1.35vw,1.85rem)] leading-none whitespace-nowrap'>
+    {title}
+  </span>
 
-            {/* 英文副标题 */}
-            {subtitle && (
-              <span className='mt-[clamp(0.75rem,1vw,1.5rem)] font-normal text-[clamp(1rem,1.35vw,2rem)] leading-none whitespace-nowrap'>
-                {subtitle}
-              </span>
-            )}
-          </SmartLink>
+  {/* 英文副标题 */}
+  {subtitle && (
+    <span className='mt-[clamp(0.5rem,0.7vw,1rem)] font-normal text-[clamp(0.85rem,0.9vw,1.35rem)] leading-none whitespace-nowrap'>
+      {subtitle}
+    </span>
+  )}
+</SmartLink>
         )
       })}
     </nav>
