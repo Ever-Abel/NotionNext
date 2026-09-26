@@ -15,9 +15,8 @@ const NavButtonGroup = props => {
   /**
    * 将分类名称拆分为中文标题和英文副标题
    *
-   * 示例：
    * 玩家生涯 I'm a Gamer
-   * =>
+   * ->
    * 玩家生涯
    * I'm a Gamer
    */
@@ -43,18 +42,17 @@ const NavButtonGroup = props => {
       className='
         w-full
         z-10
-        px-5
+        px-[2vw]
         py-2
-        mt-8
-        md:mt-10
-        xl:mt-16
+
+        mt-[clamp(2.5rem,4vw,5rem)]
+
         flex
         flex-wrap
         justify-center
         items-center
-        gap-6
-        md:gap-8
-        md:max-w-7xl
+
+        gap-[clamp(1rem,2vw,3rem)]
       '>
       {categoryOptions.map(category => {
         const { title, subtitle } = splitCategoryName(category.name)
@@ -70,21 +68,16 @@ const NavButtonGroup = props => {
               text-white
               shadow-text
 
-              w-full
-              sm:w-4/5
-
-              md:w-72
-              md:h-28
-
-              lg:w-80
-              lg:h-32
+              w-[clamp(15rem,22vw,28rem)]
+              h-[clamp(6rem,9vw,11rem)]
 
               flex
               flex-col
               justify-center
               items-center
 
-              px-6
+              px-[clamp(1rem,2vw,2.5rem)]
+
               border-2
               cursor-pointer
               rounded-xl
@@ -99,13 +92,13 @@ const NavButtonGroup = props => {
             '>
 
             {/* 中文标题 */}
-            <span className='text-xl md:text-2xl lg:text-3xl font-semibold whitespace-nowrap leading-none'>
+            <span className='font-semibold text-[clamp(1.25rem,2vw,2.75rem)] leading-none whitespace-nowrap'>
               {title}
             </span>
 
             {/* 英文副标题 */}
             {subtitle && (
-              <span className='mt-3 text-base md:text-lg lg:text-xl font-normal whitespace-nowrap leading-none'>
+              <span className='mt-[clamp(0.75rem,1vw,1.5rem)] font-normal text-[clamp(1rem,1.35vw,2rem)] leading-none whitespace-nowrap'>
                 {subtitle}
               </span>
             )}
